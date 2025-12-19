@@ -83,10 +83,8 @@ const cartSlice = createSlice({
   initialState,
   reducers: {
     addToCart,
-    removeFromCart,
-    increaseQty,
-    decreaseQty,
-    clearCart,
+     removeFromCart,
+   
   },
 });
 ```
