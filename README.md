@@ -8,7 +8,6 @@ A modern and responsive **Shopping Cart Application** built using **React.js**, 
 
 * 🛍️ Display product list
 * ➕ Add products to cart
-* ➖ Increase / decrease product quantity
 * 🗑️ Remove items from cart
 * 💰 Automatic total price calculation
 * 📦 Global state management using **Redux Toolkit**
