@@ -1,16 +1,125 @@
-# React + Vite
+# 🛒 Redux Cart App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive **Shopping Cart Application** built using **React.js**, **Tailwind CSS**, and **Redux Toolkit**. The app demonstrates cart logic, global state management, and a clean UI suitable for real-world e-commerce applications.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+* 🛍️ Display product list
+* ➕ Add products to cart
+* ➖ Increase / decrease product quantity
+* 🗑️ Remove items from cart
+* 💰 Automatic total price calculation
+* 📦 Global state management using **Redux Toolkit**
+* ⚡ Responsive UI with **Tailwind CSS**
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Frontend:** React.js
+* **Styling:** Tailwind CSS
+* **State Management:** Redux Toolkit
+
+---
+
+## 📂 Project Structure
+
+```bash
+src/
+├── components/
+│   ├── CartTile.jsx
+│   ├── ProductTile.jsx
+│   ├── Cart.jsx
+│   └── CartItem.jsx
+├── features/
+│   ├── store.js
+│   └── cartSlice.js
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/santhoshwebdev11-design/redux-cart-app
+```
+
+2. Navigate to the project directory
+
+```bash
+cd redux-cart-app
+```
+
+3. Install dependencies
+
+```bash
+npm install
+```
+
+4. Start the development server
+
+```bash
+npm run dev
+```
+
+---
+
+## 📌 Redux Toolkit Implementation
+
+* Centralized cart state
+* Uses `createSlice` for reducers and actions
+* Clean and scalable cart logic
+
+```js
+const cartSlice = createSlice({
+  name: "cart",
+  initialState,
+  reducers: {
+    addToCart,
+    removeFromCart,
+    increaseQty,
+    decreaseQty,
+    clearCart,
+  },
+});
+```
+
+---
+
+## 🌐 Live Demo (Vercel)
+
+The application is deployed using **Vercel**.
+
+🔗 **Live URL:** [https://redux-cart-app-blush.vercel.app/](https://redux-cart-app-blush.vercel.app/)
+
+---
+
+## 🌱 Future Improvements
+
+* Backend API integration
+* User authentication
+* Payment gateway integration
+* Persistent cart using LocalStorage
+* Product search and filters
+
+---
+
+## 🙌 Author
+
+**Santhosh N**
+
+* GitHub: [https://github.com/santhoshwebdev11-design/redux-cart-app](https://github.com/santhoshwebdev11-design/redux-cart-app)
+* LinkedIn: [https://linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+
+---
+
+## ⭐ Support
+
+If you like this project, please ⭐ the repository to support my learning jo
